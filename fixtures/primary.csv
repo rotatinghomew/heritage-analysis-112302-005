@@ -1,0 +1,5 @@
+team,day,node,enter,leave,occupancy,weather,group,closure
+A,1,stair,09:00,09:12,8,dry,G1,no
+B,1,stair,09:10,09:22,10,dry,G1,no
+C,2,stair,10:00,,6,rain,G2,no
+C,2,refuge,10:18,10:30,6,rain,G2,yes

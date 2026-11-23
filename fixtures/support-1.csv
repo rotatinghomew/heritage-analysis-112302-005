@@ -1,0 +1,4 @@
+booking,team,day,entry,people,status,paid
+B1,A,1,09:00,8,confirmed,yes
+B2,B,1,09:10,10,confirmed,yes
+B3,C,2,10:00,6,confirmed,no

@@ -1,0 +1,3 @@
+node,max_occupancy,max_dwell,evacuation_minutes
+stair,12,15,6
+refuge,18,20,8
