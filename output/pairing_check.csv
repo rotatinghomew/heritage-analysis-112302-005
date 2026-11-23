@@ -1,0 +1,2 @@
+day,node,pair,people,capacity,feasible,note
+1,stair,A+B,18,12,False,人数为团体实测值，不可独立重排

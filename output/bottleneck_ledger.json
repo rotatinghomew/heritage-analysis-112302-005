@@ -1,0 +1,65 @@
+[
+  {
+    "code": "CAPACITY-BREACH",
+    "day": 1,
+    "node": "stair",
+    "window": "09:10-09:12",
+    "detail": "团队 A+B 合计 18 人 > 容量 12 人，持续 2 分钟",
+    "source": "primary.csv + support-2.csv",
+    "effect": "已付款预约保留权利，不可履行部分进改约队列；同窗口不核准新名额"
+  },
+  {
+    "code": "MISSING-LEAVE",
+    "day": 2,
+    "node": "stair",
+    "window": "10:00 起",
+    "detail": "团队 C 缺离场事件：占用上界与是否超过 15 分钟停留上限均无法判定",
+    "source": "primary.csv",
+    "effect": "按规程占用持续至确认离场；保守口径下该节点在 10:00 之后的承诺窗口暂停"
+  },
+  {
+    "code": "UNCERTAIN-EVAC",
+    "day": 2,
+    "node": "stair->refuge",
+    "window": "10:00 起",
+    "detail": "团队 C 在 stair 缺离场记录，无法核验到 refuge 的 6 分钟疏散间隔（已知 refuge 入场 10:18）",
+    "source": "primary.csv + support-2.csv",
+    "effect": "只界定压力、不判定合规；相关窗口暂停承诺"
+  },
+  {
+    "code": "NODE-CLOSURE",
+    "day": 2,
+    "node": "refuge",
+    "window": "10:18-10:30",
+    "detail": "团队 C 在场期间 refuge 标记临时关闭；其占用持续到确认离场，不能靠挪动起始时段把占用转到别处",
+    "source": "primary.csv",
+    "effect": "refuge 当日关闭后不核准新入场；未售出名额待重开后按新条件投放"
+  },
+  {
+    "code": "BOOKING",
+    "day": 1,
+    "node": "(预约)",
+    "window": "09:00",
+    "detail": "B1 团队 A 8 人 status=confirmed paid=是；人数与轨迹一致",
+    "source": "support-1.csv + primary.csv",
+    "effect": "已付款：保留原窗口或改约；未付款：保留权利但不具备同等级保护，不可履行时列入改约"
+  },
+  {
+    "code": "BOOKING",
+    "day": 1,
+    "node": "(预约)",
+    "window": "09:10",
+    "detail": "B2 团队 B 10 人 status=confirmed paid=是；人数与轨迹一致",
+    "source": "support-1.csv + primary.csv",
+    "effect": "已付款：保留原窗口或改约；未付款：保留权利但不具备同等级保护，不可履行时列入改约"
+  },
+  {
+    "code": "BOOKING",
+    "day": 2,
+    "node": "(预约)",
+    "window": "10:00",
+    "detail": "B3 团队 C 6 人 status=confirmed paid=否；人数与轨迹一致",
+    "source": "support-1.csv + primary.csv",
+    "effect": "已付款：保留原窗口或改约；未付款：保留权利但不具备同等级保护，不可履行时列入改约"
+  }
+]

@@ -1,0 +1,5 @@
+scenario,desc,stair_pitch,stair_entries_per_3h,stair_rate_per_hour,refuge_pitch,refuge_entries_per_3h,refuge_rate_per_hour
+S0-现状,实测停留（含已发生的超载）,—（实测无统一节拍）,不可计算,—,—（实测无统一节拍）,不可计算,—
+S1-规程上限,stair 15 分钟 / refuge 20 分钟（support-2 现行上限）,21 分钟,8,2.86,28 分钟,6,2.14
+S2-收紧10,stair 10 分钟 / refuge 15 分钟,16 分钟,11,3.75,23 分钟,7,2.61
+S3-极限疏导,stair 8 分钟 / refuge 12 分钟（探索，需人力与安全复核）,14 分钟,12,4.29,20 分钟,9,3.0

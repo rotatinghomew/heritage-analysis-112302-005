@@ -1,0 +1,5 @@
+day,node,slot_start,slot_end,decision,blocker,source
+1,stair,09:00,09:21,不可售,团队 A 占用 09:00-09:12；团队 B 占用 09:10-09:22；容量超载 A+B=18>12,primary.csv + support-2.csv
+1,refuge,—,—,暂停承诺,无观测资料,primary.csv 缺该节点当日记录
+2,stair,10:00,未知,暂停承诺,团队 C 缺离场，占用上界未知,primary.csv
+2,refuge,10:18,关闭后全部,不投放,节点关闭，团队 C 占用至 10:30,primary.csv
